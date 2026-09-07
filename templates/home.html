@@ -1,4 +1,9 @@
+{% extends "base.html" %}
 <html>
+
+
+{% block content %}
+    <h1>Home</h1>
 <head>
     <title>To-Do</title>
 </head>
@@ -13,10 +18,11 @@
             {% if task.done %}
                 - Completed
             {% else %}
-                - In Progress
+                - In progress
             {% endif %}
         </li>
     {% endfor %}
     </ul>
 </body>
 </html>
+{% endblock content %}
